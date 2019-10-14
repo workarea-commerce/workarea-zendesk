@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://d3v-5752.zendesk.com/api/v2/requests.json
+    body:
+      encoding: UTF-8
+      string: '{"request":{"requester":{"name":"Bob Clams","email":"bclams@workarea.com"},"subject":"TEST
+        IGNORE ME","comment":{"body":"I''ve crashed my car on the internet super highway"}}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic ZW1haWxAZXhhbXBsZS5jb20vdG9rZW46eW91cnRva2Vu
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Mon, 14 Oct 2019 19:31:26 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '627'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6497774e4367efb1dce1118376d8c70d1571081485; expires=Tue, 13-Oct-20
+        19:31:25 GMT; path=/; domain=.d3v-5752.zendesk.com; HttpOnly
+      - __cfruid=7c507406e9a3d5e18ec7690fedd6290e176f8f51-1571081486; path=/; domain=.d3v-5752.zendesk.com;
+        HttpOnly
+      X-Zendesk-Api-Version:
+      - v2
+      X-Zendesk-Application-Version:
+      - v3010.64
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://d3v-5752.zendesk.com/api/v2/requests/33.json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - X-Zendesk-API-Warn,X-Zendesk-User-Id,X-Zendesk-User-Session-Expires-At
+      X-Rate-Limit:
+      - '700'
+      X-Rate-Limit-Remaining:
+      - '700'
+      Strict-Transport-Security:
+      - max-age=31536000;
+      Etag:
+      - W/"bbd5d2a43f0cc508b6fb70b7cb1039cb"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Zendesk-Origin-Server:
+      - classic-app-server-79686774f-mfjl2
+      X-Request-Id:
+      - 525bf932eab1e6bc-EWR
+      X-Runtime:
+      - '0.891358'
+      X-Zendesk-Request-Id:
+      - e6f89e3c3d4d6cf79f53
+      X-Content-Type-Options:
+      - nosniff
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 525bf932eab1e6bc-EWR
+    body:
+      encoding: UTF-8
+      string: '{"request":{"url":"https://d3v-5752.zendesk.com/api/v2/requests/33.json","id":33,"status":"new","priority":null,"type":null,"subject":"TEST
+        IGNORE ME","description":"I''ve crashed my car on the internet super highway","organization_id":null,"via":{"channel":"api","source":{"from":{},"to":{},"rel":null}},"custom_fields":[],"requester_id":388560052351,"collaborator_ids":[],"email_cc_ids":[],"is_public":true,"due_at":null,"can_be_solved_by_me":false,"created_at":"2019-10-14T19:31:26Z","updated_at":"2019-10-14T19:31:26Z","recipient":null,"followup_source_id":null,"assignee_id":null,"ticket_form_id":360000438171,"fields":[]}}'
+    http_version: 
+  recorded_at: Mon, 14 Oct 2019 19:31:26 GMT
+recorded_with: VCR 2.9.3

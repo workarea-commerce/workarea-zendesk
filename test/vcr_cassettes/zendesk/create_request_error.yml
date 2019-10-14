@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://d3v-5752.zendesk.com/api/v2/requests.json
+    body:
+      encoding: UTF-8
+      string: '{"request":{"requester":{"name":"Bob Clams","email":"bclams"},"subject":"TEST
+        IGNORE ME","comment":{"body":"I''ve crashed my car on the internet super highway"}}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic ZW1haWxAZXhhbXBsZS5jb20vdG9rZW46eW91cnRva2Vu
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Date:
+      - Tue, 15 Oct 2019 14:15:09 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '162'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d81f79bd0a9dbd53f19d0d9282c20653f1571148908; expires=Wed, 14-Oct-20
+        14:15:08 GMT; path=/; domain=.d3v-5752.zendesk.com; HttpOnly
+      - __cfruid=75c894c17d0112b304d5b1fc416e3bf506914b22-1571148909; path=/; domain=.d3v-5752.zendesk.com;
+        HttpOnly
+      X-Zendesk-Api-Version:
+      - v2
+      X-Zendesk-Application-Version:
+      - v3010.65
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - X-Zendesk-API-Warn,X-Zendesk-User-Id,X-Zendesk-User-Session-Expires-At
+      X-Rate-Limit:
+      - '700'
+      X-Rate-Limit-Remaining:
+      - '700'
+      Strict-Transport-Security:
+      - max-age=31536000;
+      Cache-Control:
+      - no-cache
+      X-Zendesk-Origin-Server:
+      - classic-app-server-569cc7685d-d7z64
+      X-Request-Id:
+      - 526267471cc6924c-SEA
+      X-Runtime:
+      - '0.478911'
+      X-Zendesk-Request-Id:
+      - 96be25382f09a3a1892d
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 526267471cc6924c-EWR
+    body:
+      encoding: UTF-8
+      string: '{"error":"RecordInvalid","description":"Record validation errors","details":{"requester":[{"description":"Requester:
+        Email:  bclams is not properly formatted"}]}}'
+    http_version: 
+  recorded_at: Tue, 15 Oct 2019 14:15:09 GMT
+recorded_with: VCR 2.9.3
