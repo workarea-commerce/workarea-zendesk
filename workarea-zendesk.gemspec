@@ -9,19 +9,10 @@ Gem::Specification.new do |spec|
   spec.version     = Workarea::Zendesk::VERSION
   spec.authors     = ["Jeff Yucis"]
   spec.email       = ["jyucis@workarea.com"]
-  spec.homepage    = "TODO"
-  spec.summary     = "TODO: Summary of Zendesk."
-  spec.description = "TODO: Description of Zendesk."
+  spec.homepage    = "https://github.com/workarea-commerce/workarea-zendesk"
+  spec.summary     = "Zendesk Integration for Workarea Commerce"
+  spec.description = "Zendesk Help Desk integration for workarea commerce"
   spec.license     = "Business Software License"
-
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
 
   spec.files = `git ls-files`.split("\n")
 

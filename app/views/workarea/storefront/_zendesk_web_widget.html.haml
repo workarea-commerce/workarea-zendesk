@@ -1,0 +1,2 @@
+- if Workarea::Zendesk.config.public_key.present?
+  %script#ze-snippet{src: "https://static.zdassets.com/ekr/snippet.js?key=#{Workarea::Zendesk.config.public_key}"}
