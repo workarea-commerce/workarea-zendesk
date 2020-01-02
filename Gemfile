@@ -12,4 +12,4 @@ gemspec
 # your gem to rubygems.org.
 
 # To use a debugger
-gem 'workarea', github: 'workarea-commerce/workarea'
+gem 'workarea', github: 'workarea-commerce/workarea', branch: 'v3.5-stable'
